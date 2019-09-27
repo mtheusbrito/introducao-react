@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import TechItem from './TechItem';
 class TechList  extends Component{
+    
     state = {
         newTech: '',
         techs: [
@@ -34,6 +35,7 @@ return (
                     tech={tech}
                     onDelete={ () => this.handleDelete(tech)}/>
                 ))}
+        
             </ul>
             <input type="text" onChange={this.handleInputChange}  value={this.state.newTech}/>
             <button type="submit">Enviar </button>
